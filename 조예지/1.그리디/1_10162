@@ -1,0 +1,15 @@
+T = int(input())
+
+Ta = 300
+Tb = 60
+Tc = 10
+
+Ba = T // Ta
+T = T % Ta
+Bb = T // Tb
+T = T % Tb
+if ((T % Tc) == 0):
+  Bc = T//Tc
+  print (Ba, Bb, Bc)
+else :
+  print(-1)
