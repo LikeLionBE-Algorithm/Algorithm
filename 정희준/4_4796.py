@@ -1,5 +1,5 @@
 import sys
-x = [] # 최대 사용 가능한 일수를 입력 순서대로 저장할 공간 
+x = [] # 최대 사용 가능한 일수를 입력 순서대로 저장할 공간
 while True:
     L,P,V = map(int,sys.stdin.readline().split())
     if L == 0 and P == 0 and V == 0 : # 모두 0 을 입력하면 while문 탈출 
