@@ -15,5 +15,3 @@ def solution(answers):
         if result[i] == max(result):
             answers.append(i+1)
     return answers
-
-
