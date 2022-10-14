@@ -10,7 +10,7 @@ class microwave {
     public microwave(int T){
         this.time = T;
     }
-
+    
     public int getClickButtonA() {
         if (time / 300 == 0) {
             ClickButtonA = 0;
