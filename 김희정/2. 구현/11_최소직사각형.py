@@ -1,5 +1,5 @@
 '''
-Programmers : level1 최소직사각형
+Programmers : level 1 최소직사각형
 나의 idea :
 1. w,h 중 가장 작은 값 pick
 2. 배열 전체 돌면서 탐색
@@ -31,10 +31,11 @@ def solution(sizes):
     answer = result_max*result_min
     return answer
 
+
+
 if __name__ == '__main__':
     sizes = [[14, 4], [19, 6], [6, 16], [18, 7], [7, 11]]
     print(solution(sizes))
-
 '''
 [other solution]
 - idea : 큰값 중 최댓값 * 작은값 중 최댓값
