@@ -11,7 +11,6 @@ def dfs (graph, infected, i):
 # graph 만들기
 # graph = [[]]*(N+1) : 이렇게 했다가 graph 안의 값들이 동기화 됨
 graph = [[] for _ in range(N+1)]
-
 for _ in range(M):
     a, b = map(int, input().split())
     graph[a].append(b)
