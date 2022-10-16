@@ -1,4 +1,5 @@
 package net.acmicpc.baekjoon.Oct_15th;
+
 // [BOJ: 2606] 바이러스
 // BFS, Graph, Queue
 
