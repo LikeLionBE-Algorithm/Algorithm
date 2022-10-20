@@ -1,6 +1,18 @@
 '''
 BOJ_2178_미로탐색
 나의 idea : bfs로 인접한 칸 탐색, 이동 칸 수를 grid에 저장하면서 진행
+[input]
+4 6
+101111
+101010
+101011
+111011
+[output]
+3, 0, 9, 10, 11, 12
+2, 0, 8, 0, 12, 0
+3, 0, 7, 0, 13, 14
+4, 5, 6, 0, 14, 15
+15
 '''
 from collections import deque
 
@@ -26,4 +38,5 @@ while queue:
         if grid[nx][ny] == 1:
             queue.append((nx,ny))
             grid[nx][ny] = grid[x][y]+1 #현재 진행 칸 수 저장
+# print(grid)
 print(grid[n-1][m-1])
