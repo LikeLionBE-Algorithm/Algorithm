@@ -15,15 +15,15 @@ for i in range(N):
 
 
 def dfs(r, c, cnt):
-    graph[c][r] = "0"
+    graph[r][c] = "0"
     for i in range(4):
         nc = c + cc[i]
         nr = r + cr[i]
-        if nc == (N - 1) and nr == (M - 1):
+        if nc == (M - 1) and nr == (N - 1):
             result.append(cnt + 1)
             return
-        elif 0 <= nc < N and 0 <= nr < M:
-            if graph[nc][nr] == "1":
+        elif 0 <= nc < M and 0 <= nr < N:
+            if graph[nr][nc] == "1":
                 dfs(nr, nc, cnt + 1)
 
 

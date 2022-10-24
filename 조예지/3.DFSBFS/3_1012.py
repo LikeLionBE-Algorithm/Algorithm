@@ -79,7 +79,7 @@ for _ in range(T):
     cnt = 0
     for y in range(N):
         for x in range(M):
-            if cbgs[y][x] == False:
+            if cbgs[y][x] == False:     #if not cbgs[y][x]
                 bfs(cbgs, x, y)
                 cnt += 1
 
