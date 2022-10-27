@@ -22,8 +22,9 @@ def bs (arr, target):
 
 N = int(input())
 SC = list(map(int, sys.stdin.readline().split()))
+SC.sort()
 M = int(input())
 TC = list(map(int, sys.stdin.readline().split()))
 
 for cd in TC:
-    print(bs(sorted(SC), cd), end=" ")
+    print(bs(SC, cd), end=" ")
