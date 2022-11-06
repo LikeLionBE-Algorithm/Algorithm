@@ -28,10 +28,6 @@ for i in range(max+1):
     for j in range(arr[i]):
         print(i)
 
-
-
-
-
 """
 1.
 import sys
